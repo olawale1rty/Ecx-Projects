@@ -1,0 +1,16 @@
+{
+  "name": "ecx",
+  "version": "1.0.0",
+  "description": "This is my files in ecx tutorial.",
+  "main": "ecx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Olawale",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^4.0.0",
+    "is-array": "^1.0.1",
+    "is-odd": "^3.0.1"
+  }
+}
