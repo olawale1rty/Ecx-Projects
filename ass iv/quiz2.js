@@ -5,9 +5,7 @@ async function checkUser(username, password) {
     let key = require('./db.js');
     const user = key.username;
     const pass = key.password;
-    const salt = bcrypt.genSaltSync(saltRounds);
-    const hash = bcrypt.hashSync(pass, salt);
-    const result = await bcrypt.compare(password, hash);
+    const result = await bcrypt.compare(password, pass);
     
     // console.log(result)
     if (username == user && result ){
