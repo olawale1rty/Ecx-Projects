@@ -1,24 +1,24 @@
-const bcrypt = require('bcrypt');
-// const saltRounds = 10;
-// const myPassword = 'qwerty';
-
-// const salt = bcrypt.genSaltSync(saltRounds);
-// const hash = bcrypt.hashSync(myPassword, salt);
-
 async function checkUser(username, password) {
     //... fetch user from a db etc.
+    const bcrypt = require('bcrypt');
+    const saltRounds = 10;
     let key = require('./db.js');
+    const user = key.username;
+    const pass = key.password;
+    const salt = bcrypt.genSaltSync(saltRounds);
+    const hash = bcrypt.hashSync(pass, salt);
+    const result = await bcrypt.compare(password, hash);
     
-    const user = await bcrypt.compare(username, key.username);
-    const pass = await bcrypt.compare(password, key.password);
-    
-    console.log(user)
-    console.log(pass)
-    // if (password == key.password){
-    //     console.log('correct')
-    // }else{
-    //     console.log('incorrect')
-    // }        
+    // console.log(result)
+    if (username == user && result ){
+        console.log('Login Correct')
+    } 
+    else if (username == user || result){
+        console.log('Login Incorrect')
+    } 
+    else {
+        console.log('Login Failed')
+    }      
 }
 
 checkUser("Mustapha", "qwerty")

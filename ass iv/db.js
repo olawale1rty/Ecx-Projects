@@ -1,4 +1,2 @@
-module.exports = { 
-    username : "Mustapha",
-    password : "qwerty"
-}
+exports.username = "Mustapha";
+exports.password = "qwerty";
