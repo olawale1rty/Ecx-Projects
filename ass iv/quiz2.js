@@ -1,12 +1,10 @@
 async function checkUser(username, password) {
     //... fetch user from a db etc.
     const bcrypt = require('bcrypt');
-    const saltRounds = 10;
     let key = require('./db.js');
     const user = key.username;
     const pass = key.password;
     const result = await bcrypt.compare(password, pass);
-    
     // console.log(result)
     if (username == user && result ){
         console.log('Login Correct')
@@ -19,7 +17,8 @@ async function checkUser(username, password) {
     }      
 }
 
-checkUser("Mustapha", "qwerty")
+checkUser("Mustaha", "qwert")
+
 
 
 

@@ -1,8 +1,7 @@
-welcome =  (username, password) => {
+welcome = (username, password) => {
     
     //... fetch user from a db etc.
     const bcrypt = require('bcrypt');
-    const saltRounds = 10;
     let key = require('./db.js');
     
     //creating variables for receiving the passwords from database.
@@ -31,7 +30,7 @@ welcome =  (username, password) => {
            
     if ( username == user1 && result1){   
       let output = `${user1} is ${key.studentA.age} years old. His matriculation number is ${key.studentA.matric}. He is in ${key.studentA.dept}. He was born on ${key.studentA.dob}.`     
-      console.log(output)
+      console.log(output)  
     } 
     else if ( username == user2 && result2){
       let output = `${user2} is ${key.studentB.age} years old. His matriculation number is ${key.studentB.matric}. He is in ${key.studentB.dept}. He was born on ${key.studentB.dob}.`     
@@ -58,7 +57,7 @@ welcome =  (username, password) => {
 }
 
 
-welcome("Ayo", "qw")
+welcome("Olawale", "qwert")
 
 
 
