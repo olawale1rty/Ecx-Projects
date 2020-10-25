@@ -1,0 +1,4 @@
+::1 - - [18/Apr/2020:12:40:08 +0000] "GET /alluser/5e9a14eb330dca06e46062ad HTTP/1.1" 200 516 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36"
+::1 - - [18/Apr/2020:12:40:55 +0000] "GET /logs HTTP/1.1" 500 2245 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36"
+::1 - - [18/Apr/2020:12:44:14 +0000] "GET /logs HTTP/1.1" 500 2245 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36"
+::1 - - [18/Apr/2020:12:45:13 +0000] "GET /logs HTTP/1.1" 500 2245 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36"

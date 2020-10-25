@@ -57,7 +57,7 @@ welcome = (username, password) => {
 }
 
 
-welcome("Olawale", "qwert")
+welcome("Olawale", "qwerty")
 
 
 
